@@ -28,7 +28,7 @@ resource "vultr_instance" "lucaaaaas" {
 
               sudo docker build -t votre-image-docker .
 
-              sudo docker run -d -p 80:80 satzisa/html5-speedtest
+              sudo docker run -d -p 80:80 --name mon-app-docker votre-image-docker
             EOF
 }
 
