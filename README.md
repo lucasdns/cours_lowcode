@@ -31,9 +31,9 @@ Intégrez une variable dans votre script Terraform :
 Script Python pour l'Automatisation 🐍
 Écrivez un script Python qui utilise l'interface de ligne de commande (CLI) pour créer un dépôt sur GitHub : 
 
-<img width="585" alt="Capture d’écran 2023-11-30 à 10 34 52" src="https://github.com/lucasdns/cours_lowcode/assets/74400487/5a393d90-b390-4db5-ac8e-9925cffb3d55">
-<img width="645" alt="Capture d’écran 2023-11-30 à 10 35 53" src="https://github.com/lucasdns/cours_lowcode/assets/74400487/c02abaa3-02f5-4158-98d0-0def0cb9d031">
-<img width="317" alt="Capture d’écran 2023-11-30 à 10 36 09" src="https://github.com/lucasdns/cours_lowcode/assets/74400487/7cf985e0-9823-4969-8995-42dd978dc1fd">
+<img width="506" alt="Capture d’écran 2023-11-30 à 10 56 56" src="https://github.com/lucasdns/cours_lowcode/assets/74400487/7bbf6295-4bbc-4ac1-a6b1-05d9460c43d3">
+<img width="1058" alt="Capture d’écran 2023-11-30 à 10 57 01" src="https://github.com/lucasdns/cours_lowcode/assets/74400487/0d8a270a-cd7a-49d8-9983-dd6562c0d9db">
+<img width="565" alt="Capture d’écran 2023-11-30 à 10 57 08" src="https://github.com/lucasdns/cours_lowcode/assets/74400487/a54cb3e7-a2a6-4212-99f3-b7ed200c4cb3">
 
 
 07_hello_vultr :
