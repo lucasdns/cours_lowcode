@@ -38,6 +38,21 @@ Script Python pour l'Automatisation 🐍
 
 07_hello_vultr :
 
+Étape 2: Installation de Docker sur la VM via Terraform 🐳
+Utilisez Terraform pour exécuter des scripts d'installation de Docker sur la VM :
+Assurez-vous que Docker est correctement installé et configuré via Terraform.
+Étape 3: Clonage du dépôt et Lancement de l'Application Docker via Terraform 🚢
+Configurez Terraform pour construire et lancer le conteneur Docker, en s'assurant qu'il écoute sur le port 80.
+Assurez-vous que le site web est accessible via l'adresse IP de la VM :
+
+<img width="642" alt="Capture d’écran 2023-11-30 à 15 31 51" src="https://github.com/lucasdns/cours_lowcode/assets/74400487/0625c380-6907-492a-a5a8-699bffec6c3a">
+<img width="465" alt="Capture d’écran 2023-11-30 à 15 32 05" src="https://github.com/lucasdns/cours_lowcode/assets/74400487/37205cb2-9403-4921-b160-827709e5ac36">
+
+
+
+
+
+
 
 
 
