@@ -23,12 +23,25 @@ resource "vultr_instance" "lucaaaaas" {
               sudo systemctl start docker
               sudo systemctl enable docker
 
-              git clone https://github.com/votre-utilisateur/cours_lowcode
-              cd cours_lowcode
+              # Déploiement de MySQL
+              sudo docker run -d \
+                --name mysql-container \
+                -e MYSQL_ROOT_PASSWORD=your-mysql-password \
+                -e MYSQL_DATABASE=wordpress \
+                -e MYSQL_USER=wordpress \
+                -e MYSQL_PASSWORD=wordpress-password \
+                mysql:latest
 
-              sudo docker build -t votre-image-docker .
-
-              sudo docker run -d -p 80:80 --name mon-app-docker votre-image-docker
+              # Déploiement de WordPress
+              sudo docker run -d \
+                --name wordpress-container \
+                --link mysql-container:mysql \
+                -p 80:80 \
+                -e WORDPRESS_DB_HOST=mysql \
+                -e WORDPRESS_DB_USER=wordpress \
+                -e WORDPRESS_DB_PASSWORD=wordpress-password \
+                -e WORDPRESS_DB_NAME=wordpress \
+                wordpress:latest
             EOF
 }
 
