@@ -23,14 +23,16 @@ resource "vultr_instance" "lucaaaaas" {
               sudo systemctl start docker
               sudo systemctl enable docker
 
-              # Clonez le dépôt
-              git clone https://github.com/votre-utilisateur/cours_lowcode.git
+              git clone https://github.com/votre-utilisateur/cours_lowcode
               cd cours_lowcode
 
-              # Construisez l'image Docker
               sudo docker build -t votre-image-docker .
 
-              # Lancez l'application Docker
-              sudo docker run -d -p 80:80 --name mon-app-docker votre-image-docker
+              sudo docker run -d -p 80:80 satzisa/html5-speedtest
             EOF
+}
+
+output "instance_ip" {
+  value       = vultr_instance.lucaaaaas.main_ip
+  description = "Adresse IP publique de la VM"
 }
