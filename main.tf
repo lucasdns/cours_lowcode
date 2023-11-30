@@ -1,15 +1,13 @@
-provider "github" {
-  token = "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"
+terraform {
+  required_providers {
+    vultr = {
+      source  = "vultr/vultr"
+    }
+  }
 }
 
-variable "nom_du_repo" {
-  description = "Nom du dépôt GitHub"
-  type        = string
+resource "vultr_instance" "example" {
+  plan        = "vc2-1c-1gb" 
+  region      = "fra"      
+  os_id       = "387"         
 }
-
-resource "github_repository" "mon_repo" {
-  name        = var.nom_du_repo
-  description = "Créé avec Terraform2"
-  private     = true
-}
-
